@@ -13,7 +13,7 @@ namespace IntroExercises
         public static int Find(int[] array, int value)
         {
             int position = 0;
-            while(position <= array.length){
+            while(position < array.length){
                 if(array[i] == value){
                     return position
                 } else{
@@ -28,8 +28,9 @@ namespace IntroExercises
         //Count should return the number of times value appears in array. 0 if the array is empty/null
         public static int Count(int[] array, int value)
         {
-            int count;
-            for(int i; i <= array.length; i++){
+            int count = 0;
+            int n = array.length - 1;
+            for(int i = 0; i = n; i++){
                 if(array.length == 0){
                     return 0;
                 }else if(array[i] == value){
@@ -45,11 +46,10 @@ namespace IntroExercises
         //-1 if endIndex is less than startIndex or any of them is outside the array
         public static int Find(int[] array, int value, int startIndex, int endIndex)
         {
-            int position = 0;
             if(array.length !=){
-                for(int i = startIndex; i <= endIndex & position == 0; i++){
+                for(int i = startIndex; i = endIndex; i++){
                     if(array[i] == value){
-                        position = i;
+                        return i;
                     }
                 }
             }else{
@@ -64,7 +64,7 @@ namespace IntroExercises
         public static int Count(int[] array, int value, int startIndex, int endIndex)
         {
             int count = 0;
-            for(int i = startIndex; i <= endIndex & position == 0; i++){
+            for(int i = startIndex; i = endIndex; i++){
                     if(array[i] == value){
                         count++;
                     }
@@ -86,6 +86,16 @@ namespace IntroExercises
         //  AreEqual(null, null) => false
         public static bool AreEqual(int[] A, int[] B)
         {
+            if(A.length == B.length){
+                
+            }else{
+                return false;
+            }
+            
+            
+            
+            
+            
             return true;
         }
     }
