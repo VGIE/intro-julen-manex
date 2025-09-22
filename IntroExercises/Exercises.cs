@@ -12,14 +12,32 @@ namespace IntroExercises
         //Find should return the position in array where value appears for the first time. -1 if the value isn't found or the array is empty/null
         public static int Find(int[] array, int value)
         {
-            return 0;
+            int position = 0;
+            while(position <= array.length){
+                if(array[i] == value){
+                    return position
+                } else{
+                    position++;
+                }
+            }
+
+            return -1;
         }
 
         //TODO #2
         //Count should return the number of times value appears in array. 0 if the array is empty/null
         public static int Count(int[] array, int value)
         {
-            return 0;
+            int count;
+            for(int i; i <= array.length; i++){
+                if(array.length == 0){
+                    return 0;
+                }else if(array[i] == value){
+                    count++;
+                }
+            }
+            
+            return count;
         }
 
         //TODO #3
@@ -27,7 +45,16 @@ namespace IntroExercises
         //-1 if endIndex is less than startIndex or any of them is outside the array
         public static int Find(int[] array, int value, int startIndex, int endIndex)
         {
-            return 0;
+            int position = 0;
+            if(array.length !=){
+                for(int i = startIndex; i <= endIndex & position == 0; i++){
+                    if(array[i] == value){
+                        position = i;
+                    }
+                }
+            }else{
+                return -1;
+            }
         }
 
         //TODO #4
@@ -36,7 +63,17 @@ namespace IntroExercises
 
         public static int Count(int[] array, int value, int startIndex, int endIndex)
         {
-            return 0;
+            int count = 0;
+            for(int i = startIndex; i <= endIndex & position == 0; i++){
+                    if(array[i] == value){
+                        count++;
+                    }
+                }
+            if(count == 0){
+                return 0;
+            }else{
+                return count;
+            }
         }
 
         //TODO #5
